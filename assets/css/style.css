@@ -1,0 +1,15 @@
+body {
+    background-color: #1a0f31;
+    text-align: center;
+    color: #e2932e;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+#retry {
+    display: none;
+}
+
+p {
+    padding: 30px;
+}
