@@ -6,9 +6,13 @@ function precision () {
     let userAnswer = parseInt(document.getElementById('userAnswer').value);
     if (userAnswer < numberToGuess) {
         document.getElementById('precision').innerHTML = "C'est plus !";
+        document.getElementById('text').style.display = "block"
+        document.getElementById('essais').innerHTML += userAnswer + "<br>"
     }
     if (userAnswer > numberToGuess) {
         document.getElementById('precision').innerHTML = "C'est moins !";
+        document.getElementById('text').style.display = "block"
+        document.getElementById('essais').innerHTML += userAnswer + "<br>"
     }
 }
 
@@ -23,6 +27,8 @@ function retry () {
     document.getElementById('precision').style.display = "inline";
     document.getElementById('precision').innerHTML = "Devinez le nombre entre 1 et 100";
     document.getElementById('life').style.display = "inline";
+    document.getElementById('text').style.display = "none"
+    document.getElementById('essais').innerHTML = ""
     winRemove();
     looseRemove();
 }

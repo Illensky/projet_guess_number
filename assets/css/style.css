@@ -13,3 +13,7 @@ body {
 p {
     padding: 30px;
 }
+
+#text {
+    display: none;
+}
