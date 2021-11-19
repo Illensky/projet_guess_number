@@ -21,6 +21,7 @@ function retry () {
     document.getElementById('retry').style.display = "none";
     document.getElementById('life').innerHTML = "Il vous reste " + vie + " vies.";
     document.getElementById('precision').style.display = "inline";
+    document.getElementById('precision').innerHTML = "Devinez le nombre entre 1 et 100";
     document.getElementById('life').style.display = "inline";
     winRemove();
     looseRemove();
